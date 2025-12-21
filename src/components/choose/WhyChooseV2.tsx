@@ -1,0 +1,68 @@
+"use client"
+import Image from "next/image";
+import Counter from "../counter/Counter";
+import ModalVideo from "react-modal-video";
+import { useState } from "react";
+import Link from "next/link";
+
+const WhyChooseV2 = () => {
+
+    const [isOpen, setOpen] = useState(false);
+
+    return (
+        <>
+            <div className="choose-us-style-two-area default-padding-top overflow-hidden">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="choose-us-style-two default-padding-bottom">
+                                <div className="content">
+                                    <h2 className="title wow fadeInUp">Preparing for your success trusted source</h2>
+                                    <div className="wow fadeInUp" data-wow-delay="100ms">
+                                        <p>
+                                            We believe in four pillars of influence that drive our growth. This is ingrained in everything we do We use technology to create a better and smarter environment.
+                                        </p>
+                                        <ul className="list-style-one">
+                                            <li>IT Consultancy</li>
+                                            <li>Technical Support</li>
+                                            <li>Atlantic silverside parrotfish barbeled</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="expertise text-light wow fadeInUp" data-wow-delay="200ms" style={{ backgroundImage: 'url(/assets/img/banner/7.jpg)' }}>
+                                    <div className="left">
+                                        <h2><strong>28</strong> Years of experience</h2>
+                                    </div>
+                                    <div className="right">
+                                        <Link href="#" className="popup-youtube video-play-button-with-text" onClick={() => setOpen(true)}>
+                                            <span><i className="fas fa-play" /> WATCH PROCESS</span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="choose-us-style-thumb">
+                                <Image src="/assets/img/illustration/6.png" alt="Thumb" width={580} height={770} />
+                                <div className="shape">
+                                    <Image src="/assets/img/shape/8.png" alt="Shape" width={800} height={790} />
+                                </div>
+                                <div className="fun-fact">
+                                    <div className="counter">
+                                        <div className="timer"><Counter end={842} /></div>
+                                        <div className="operator">K</div>
+                                    </div>
+                                    <span className="medium">Worldwide Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ModalVideo channel='youtube' isOpen={isOpen} videoId="owhuBrGIOsE" onClose={() => setOpen(false)} />
+        </>
+    );
+};
+
+export default WhyChooseV2;
