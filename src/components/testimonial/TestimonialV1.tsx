@@ -22,7 +22,7 @@ const TestimonialV1 = () => {
                             </div>
                         </div>
                         <div className="col-lg-7 offset-lg-1">
-                            <Swiper className="testimonial-carousel swiper wow fadeInUp" data-wow-delay="100ms"
+                            <Swiper className="testimonial-carousel swiper wow fadeInUp" data-aos-delay="100"
                                 direction={"horizontal"}
                                 loop={true}
                                 autoplay={true}

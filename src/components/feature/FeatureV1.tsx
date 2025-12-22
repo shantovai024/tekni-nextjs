@@ -15,7 +15,7 @@ const FeatureV1 = () => {
                                     <Image src="/assets/img/shape/21.png" alt="Image not found" width={702} height={268} />
                                 </div>
                                 <h2 className="title split-text mb-25">Discover Innovative Technical Solution</h2>
-                                <div className="wow fadeInUp" data-wow-delay="150ms">
+                                <div className="wow fadeInUp" data-aos-delay="150">
                                     <p>
                                         Our agency’s aim is always to take the product to market as quickly as possible and use iterative software development approach until we achieve all business goals and fulfil market & user needs
                                     </p>

@@ -5,7 +5,8 @@
         "thumbFull": "4-full.jpg",
         "author": "John Baus",
         "date": "12 August, 2025",
-        "title": "Discovery incommode earnestly commanded if."
+        "title": "Discovery incommode earnestly commanded if.",
+        "delay": "100"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "thumbFull": "5-full.jpg",
         "author": "Mohon",
         "date": "12 July, 2025",
-        "title": "Expression acceptance imprudence particular"
+        "title": "Expression acceptance imprudence particular",
+        "delay": "200"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "thumbFull": "6-full.jpg",
         "author": "Paul Tun",
         "date": "06 December, 2025",
-        "title": "Considered imprudence of technical friendship."
+        "title": "Considered imprudence of technical friendship.",
+        "delay": "300"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "thumbFull": "7-full.jpg",
         "author": "Mohon",
         "date": "12 July, 2024",
-        "title": "Clothes but observe country at the maintaining."
+        "title": "Clothes but observe country at the maintaining.",
+        "delay": ""
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "thumbFull": "8-full.jpg",
         "author": "John Baus",
         "date": "12 August, 2024",
-        "title": "Breeding point concerns has terminate the hole."
+        "title": "Breeding point concerns has terminate the hole.",
+        "delay": ""
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "thumbFull": "9-full.jpg",
         "author": "Mohon",
         "date": "12 July, 2024",
-        "title": "Minuter him own clothes the maintaining of patient."
+        "title": "Minuter him own clothes the maintaining of patient.",
+        "delay": ""
     }
 ]

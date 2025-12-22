@@ -15,8 +15,8 @@ const AboutV2 = () => {
                         <div className="col-lg-6">
                             <div className="about-style-two-thumb">
                                 <Image className="wow fadeInUp" src="/assets/img/about/5.jpg" alt="Image Not Found" width={720} height={1000} />
-                                <Image className="wow fadeInDown" data-wow-delay="100ms" src="/assets/img/about/6.jpg" alt="Image Not Found" width={600} height={750} />
-                                <div className="certification wow fadeInUp" data-wow-delay="250ms">
+                                <Image className="wow fadeInDown" data-aos-delay="100" src="/assets/img/about/6.jpg" alt="Image Not Found" width={600} height={750} />
+                                <div className="certification wow fadeInUp" data-aos-delay="250">
                                     <Image src="/assets/img/icon/10.png" alt="Image Not Found" width={256} height={256} />
                                     <h4> Certified Company</h4>
                                 </div>

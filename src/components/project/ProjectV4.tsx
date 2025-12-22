@@ -39,7 +39,7 @@ const ProjectV4 = ({ hasTitle }: DataType) => {
                 <div className="container-stage container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <Swiper className="project-style-two-carousel wow fadeInUp" data-wow-delay="100ms"
+                            <Swiper className="project-style-two-carousel wow fadeInUp" data-aos-delay="100"
                                 loop={true}
                                 freeMode={true}
                                 grabCursor={true}

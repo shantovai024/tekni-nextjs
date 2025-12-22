@@ -7120,7 +7120,7 @@ ul.tech-index-items li a:hover svg {
     # Team Style
 =================================================================== */
 .team1-bg {
-	background-image: 'url(/assets/img/shape/banner.jpg)'
+	background-image: url('/assets/img/shape/banner.jpg')
 }
 
 .bg-contain-center {
@@ -8114,6 +8114,7 @@ ul.tech-index-items li a:hover svg {
 	z-index: 9;
 	position: relative;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .project-swiper-nav>div::after {

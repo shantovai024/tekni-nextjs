@@ -7,14 +7,15 @@ interface DataType {
     activeClass: string;
     name: string;
     designation: string;
+    delay: string;
 }
 
 const SingleTeamV1 = ({ team }: { team: DataType }) => {
-    const { thumb, name, designation, activeClass } = team;
+    const { thumb, name, designation, activeClass, delay } = team;
 
     return (
         <>
-            <div className={`team-style-one wow fadeInUp ${activeClass}`}>
+            <div className={`team-style-one ${activeClass}`} data-aos="fade-up" data-aos-delay={delay}>
                 <div className="thumb">
                     <Image src={`/assets/img/team/${thumb}`} alt="Image Not Found" width={800} height={900} />
                     <div className="social">

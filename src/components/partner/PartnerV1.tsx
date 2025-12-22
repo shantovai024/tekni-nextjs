@@ -12,13 +12,13 @@ const PartnerV1 = ({ sectionClass, hasBg }: DataType) => {
                 <div className="container">
                     <div className="row align-center">
                         <div className="col-lg-5">
-                            <div className="partner-map wow fadeInUp" style={{ backgroundImage: 'url(/assets/img/shape/map.png)' }}>
+                            <div className="partner-map" data-aos="fade-up" style={{ backgroundImage: 'url(/assets/img/shape/map.png)' }}>
                                 <h2 className="mask-text" style={{ backgroundImage: 'url(/assets/img/banner/6.jpg)' }}>80</h2>
                                 <h4>Partners in world wide</h4>
                             </div>
                         </div>
                         <div className="col-lg-6 offset-lg-1">
-                            <div className="partner-items wow fadeInUp" data-wow-delay="150ms">
+                            <div className="partner-items" data-aos="fade-up" data-aos-delay="150">
                                 <ul>
                                     <li><Image src="/assets/img/logo/1.png" alt="Image Not FOund" width={256} height={256} /></li>
                                     <li><Image src="/assets/img/logo/2.png" alt="Image Not FOund" width={256} height={256} /></li>

@@ -16,7 +16,7 @@ const SingleBlogV3 = ({ blog }: { blog: DataType }) => {
 
     return (
         <>
-            <div className="blog-style-three" data-wow-delay="200ms">
+            <div className="blog-style-three" data-aos-delay="200">
                 <div className="thumb">
                     <Link href={`/blog-single-with-sidebar/${id}`}>
                         <Image src={`/assets/img/blog/${thumb}`} alt="Thumb" width={800} height={510} />

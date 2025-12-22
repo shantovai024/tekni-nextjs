@@ -16,7 +16,7 @@ const MissionTab = () => {
             <div className="tab-content mission-tab-content" id="nav-tabContent">
                 <div className="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-id-1">
                     <h2 className="title split-text">Tech security and protection for our clients</h2>
-                    <div className="wow fadeInUp" data-wow-delay="100ms">
+                    <div className="wow fadeInUp" data-aos-delay="100">
                         <p>
                             A Promise of: Financial security and protection for our clients Commitment and fairness to our agents Respect and opportunity for our employees Increasing value and reward for teams to perefction of regulations.
                         </p>

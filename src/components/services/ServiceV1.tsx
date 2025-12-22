@@ -1,6 +1,7 @@
 import ServicesV1Data from "@/assets/jsonData/services/ServicesV1Data.json"
 import SingleServiceV1 from "./SingleServiceV1";
 import Link from "next/link";
+import SplitText from "../animation/SplitText.jsx"
 
 const ServiceV1 = () => {
     return (
@@ -12,8 +13,21 @@ const ServiceV1 = () => {
                         <div className="row align-center">
                             <div className="col-lg-8 mb-30 mb-xs-50 mb-md-50">
                                 <h4 className="sub-title">Our Services</h4>
-                                <h2 className="title split-text">Technical solutions that revolutionize your business.</h2>
-                                <Link className="btn btn-theme btn-md radius animation wow fadeInUp" href="/services">View all services</Link>
+                                <h2 className="title split-text">
+
+                                    <SplitText
+                                        delay={10}
+                                        animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                        animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                        easing="easeOutCubic"
+                                        threshold={0.2}
+                                        rootMargin="-50px"
+                                    >
+                                        Technical solutions that revolutionize your business.
+                                    </SplitText>
+
+                                </h2>
+                                <Link className="btn btn-theme btn-md radius animation" data-aos="fade-up" href="/services">View all services</Link>
                             </div>
                             {ServicesV1Data.slice(0, 1).map(service =>
                                 <SingleServiceV1 service={service} key={service.id} />

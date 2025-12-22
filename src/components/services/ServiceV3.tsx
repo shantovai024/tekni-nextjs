@@ -22,7 +22,7 @@ const ServiceV3 = () => {
                 <div className="container container-stage">
                     <div className="row">
                         <div className="col-lg-12">
-                            <Swiper className="services-carousel swiper wow fadeInUp" data-wow-delay="100ms"
+                            <Swiper className="services-carousel swiper wow fadeInUp" data-aos-delay="100"
                                 loop={true}
                                 freeMode={true}
                                 grabCursor={true}

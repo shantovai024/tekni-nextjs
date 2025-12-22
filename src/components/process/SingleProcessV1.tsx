@@ -15,7 +15,7 @@ const SingleProcessV1 = ({ process }: { process: DataType }) => {
     return (
         <>
             <div className="col-lg-4">
-                <div className="process-style-one wow fadeInUp" data-aos-delay={delay}>
+                <div className="process-style-one" data-aos="fade-up" data-aos-delay={delay}>
                     <div className="thumb">
                         <Image src={`/assets/img/about/${thumb}`} alt="Thumb" width={600} height={750} />
                         <span>{step}</span>

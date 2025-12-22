@@ -13,7 +13,7 @@ const AboutV3 = () => {
                     <div className="row">
                         <div className="col-lg-6 about-style-three">
                             <h4 className="sub-title">About Company</h4>
-                            <h2 className="title split-text">Discover Innovative Solutions &amp; Technology</h2>
+                            <h2 className="title split-text">Discover Innovative Solutions & Technology</h2>
                             <div className="thumb mt-50 mt-xs-30">
                                 <Image src="/assets/img/banner/9.jpg" alt="Image Not Found" width={1200} height={675} />
                                 <div className="experience wow fadeInUp">
@@ -40,7 +40,7 @@ const AboutV3 = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="list-item-style-two wow fadeInUp" data-wow-delay="500ms">
+                                <div className="list-item-style-two wow fadeInUp" data-aos-delay="500">
                                     <div className="number"><i className="fas fa-check" /></div>
                                     <div className="info">
                                         <h4>Worldwide Coverage</h4>

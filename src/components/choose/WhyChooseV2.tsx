@@ -18,7 +18,7 @@ const WhyChooseV2 = () => {
                             <div className="choose-us-style-two default-padding-bottom">
                                 <div className="content">
                                     <h2 className="title wow fadeInUp">Preparing for your success trusted source</h2>
-                                    <div className="wow fadeInUp" data-wow-delay="100ms">
+                                    <div className="wow fadeInUp" data-aos-delay="100">
                                         <p>
                                             We believe in four pillars of influence that drive our growth. This is ingrained in everything we do We use technology to create a better and smarter environment.
                                         </p>
@@ -29,7 +29,7 @@ const WhyChooseV2 = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="expertise text-light wow fadeInUp" data-wow-delay="200ms" style={{ backgroundImage: 'url(/assets/img/banner/7.jpg)' }}>
+                                <div className="expertise text-light wow fadeInUp" data-aos-delay="200" style={{ backgroundImage: 'url(/assets/img/banner/7.jpg)' }}>
                                     <div className="left">
                                         <h2><strong>28</strong> Years of experience</h2>
                                     </div>

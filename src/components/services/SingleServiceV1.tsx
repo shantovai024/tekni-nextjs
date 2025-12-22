@@ -15,7 +15,7 @@ const SingleServiceV1 = ({ service }: { service: DataType }) => {
     return (
         <>
             <div className="col-lg-4 mb-30">
-                <div className="services-style-one-item wow fadeInUp" data-aos-delay={delay}>
+                <div className="services-style-one-item" data-aos="fade-up" data-aos-delay={delay}>
                     <div className="icon">
                         <Image src={`/assets/img/icon/${icon}`} alt="Image Not Found" width={256} height={256} />
                     </div>

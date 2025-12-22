@@ -22,7 +22,7 @@ const TestimonialV2 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <Swiper className="testimonial-style-two-carousel swiper wow fadeInUp" data-wow-delay="100ms"
+                            <Swiper className="testimonial-style-two-carousel swiper wow fadeInUp" data-aos-delay="100"
                                 loop={true}
                                 freeMode={true}
                                 grabCursor={true}

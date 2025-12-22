@@ -16,7 +16,7 @@ const TechnologyV1 = () => {
                         <div className="col-lg-6">
                             <h4 className="sub-title">Technology Index</h4>
                             <h2 className="title split-text">We’re using latest technology in projects</h2>
-                            <div className="wow fadeInUp" data-wow-delay="100ms">
+                            <div className="wow fadeInUp" data-aos-delay="100">
                                 <p>
                                     Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
                                 </p>

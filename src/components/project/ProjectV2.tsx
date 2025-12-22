@@ -68,7 +68,7 @@ const ProjectV2 = () => {
                                         {ProjectV2Data.map(data =>
 
                                             <div className={`gallery-item wow fadeInUp ${activeProjectId === data.id ? 'active' : ''}`}
-                                                data-wow-delay="10mms"
+                                                data-aos-delay="100"
                                                 key={data.id}
                                                 onMouseEnter={() => handleMouseEnter(data.id)}
                                                 onMouseLeave={handleMouseLeave}
