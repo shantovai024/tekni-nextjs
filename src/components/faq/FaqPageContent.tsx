@@ -23,8 +23,8 @@ const FaqPageContent = () => {
                         </div>
                         <div className="col-lg-8 faq-style-one dark pl-50 pl-md-15 pl-xs-15">
                             <div className="accordion" id="faqAccordion">
-                                {FaqV1Data.map(faq =>
-                                    <SingleFaq faq={faq} key={faq.id} />
+                                {FaqV1Data.map((faq, index) =>
+                                    <SingleFaq faq={faq} key={faq.id} index={index} />
                                 )}
                             </div>
                         </div>
