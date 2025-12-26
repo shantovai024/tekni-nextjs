@@ -14765,3 +14765,8 @@ footer.footer-style-two .f-item.about::after {
 .thumb-style-one img {
     width: 100%;
 }
+
+.about-style-two-thumb .certification img,
+.thumb-style-two .icon img {
+    width: auto;
+}
