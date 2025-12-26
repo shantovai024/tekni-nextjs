@@ -3,6 +3,7 @@ import TestimonialV2Data from "@/assets/jsonData/testimonial/TestimonialV2Data.j
 import { Swiper, SwiperSlide } from "swiper/react";
 import SingleTestimonialV2 from "./SingleTestimonialV2";
 import { Autoplay, Keyboard, Pagination } from "swiper/modules";
+import SplitText from "../animation/SplitText";
 
 const TestimonialV2 = () => {
     return (
@@ -13,7 +14,18 @@ const TestimonialV2 = () => {
                         <div className="col-lg-8 offset-lg-2">
                             <div className="site-heading text-light text-center">
                                 <h4 className="sub-title">Testimonials</h4>
-                                <h2 className="title split-text">Clients Feedback</h2>
+                                <h2 className="title split-text">
+                                    <SplitText
+                                        delay={10}
+                                        animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                        animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                        easing="easeOutCubic"
+                                        threshold={0.2}
+                                        rootMargin="-50px"
+                                    >
+                                        Clients Feedback
+                                    </SplitText>
+                                </h2>
                                 <div className="devider" />
                             </div>
                         </div>
@@ -22,7 +34,7 @@ const TestimonialV2 = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <Swiper className="testimonial-style-two-carousel swiper wow fadeInUp" data-aos-delay="100"
+                            <Swiper className="testimonial-style-two-carousel" data-aos-delay="100"
                                 loop={true}
                                 freeMode={true}
                                 grabCursor={true}

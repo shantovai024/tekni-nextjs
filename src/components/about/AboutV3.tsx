@@ -1,22 +1,37 @@
 import Image from "next/image";
 import AboutFactV2Data from "@/assets/jsonData/fact/AboutFactV2Data.json";
 import AboutFactV2 from "../fact/AboutFactV2";
+import SplitText from "../animation/SplitText";
+import AboutV3Data from "@/assets/jsonData/about/AboutV3Data.json";
+import SingleAboutV3 from "./SingleAboutV3";
+import shape51 from "@/assets/img/shape/51.png"
 
 const AboutV3 = () => {
     return (
         <>
             <div className="about-style-three-area overflow-hidden bg-gray default-padding-top shape-light-bottom">
                 <div className="shape-right-bottom-actual">
-                    <Image src="/assets/img/shape/51.png" alt="Image Not Found" width={260} height={615} />
+                    <Image src={shape51} alt="Image Not Found" />
                 </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 about-style-three">
                             <h4 className="sub-title">About Company</h4>
-                            <h2 className="title split-text">Discover Innovative Solutions & Technology</h2>
+                            <h2 className="title split-text">
+                                <SplitText
+                                    delay={10}
+                                    animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                    animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                    easing="easeOutCubic"
+                                    threshold={0.2}
+                                    rootMargin="-50px"
+                                >
+                                    Discover Innovative Solutions & Technology
+                                </SplitText>
+                            </h2>
                             <div className="thumb mt-50 mt-xs-30">
                                 <Image src="/assets/img/banner/9.jpg" alt="Image Not Found" width={1200} height={675} />
-                                <div className="experience wow fadeInUp">
+                                <div className="experience" data-aos="fade-up">
                                     <h2><strong>1650</strong> Year of establishment</h2>
                                 </div>
                             </div>
@@ -27,28 +42,13 @@ const AboutV3 = () => {
                                     <AboutFactV2 fact={fact} key={fact.id} />
                                 )}
                             </div>
-                            <p className="wow fadeInUp">
+                            <p data-aos="fade-up">
                                 Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now  get joy you instrument reasonably.
                             </p>
                             <div className="mt-50 mt-xs-30">
-                                <div className="list-item-style-two wow fadeInUp">
-                                    <div className="number"><i className="fas fa-check" /></div>
-                                    <div className="info">
-                                        <h4>Planning & strategy</h4>
-                                        <p>
-                                            Facilisis leo vel fringilla est ullamcorper. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Non pulvinar neque laoreet suspendisse interdum consectetur but man.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="list-item-style-two wow fadeInUp" data-aos-delay="500">
-                                    <div className="number"><i className="fas fa-check" /></div>
-                                    <div className="info">
-                                        <h4>Worldwide Coverage</h4>
-                                        <p>
-                                            Technical leo vel fringilla est ullamcorper. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Non pulvinar neque laoreet suspendisse interdum consectetur..
-                                        </p>
-                                    </div>
-                                </div>
+                                {AboutV3Data.map(list =>
+                                    <SingleAboutV3 key={list.id} list={list} />
+                                )}
                             </div>
                             <div className="company-autor">
                                 <div className="left-info">

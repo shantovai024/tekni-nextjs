@@ -3,6 +3,11 @@ import BreadCrumb from "@/components/breadCrumb/BreadCrumb";
 import LayoutV1 from "@/components/layouts/LayoutV1";
 import BlogV1Data from "@/assets/jsonData/blog/BlogV1Data.json"
 
+export const metadata = {
+    title: "Tekni - Blog Single"
+};
+
+
 interface Params {
     id: string;
 }

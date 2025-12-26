@@ -29,7 +29,7 @@ const Home1Page = () => {
                 <ProjectV1 />
                 <CtaV1 />
                 <TestimonialV1 />
-                <BlogV1 />
+                <BlogV1 hasBg={true} sectionClass="bg-gray" />
             </LayoutV1>
         </>
     );

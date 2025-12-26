@@ -262,7 +262,7 @@
         "bgThumb": "32.jpg",
         "name": "Sporia Deko",
         "designation": "Marketing",
-        "delay": "",
+        "delay": "100",
         "memberData": [
             {
                 "id": 1,
@@ -326,7 +326,7 @@
         "bgThumb": "32.jpg",
         "name": "Kevin Martin",
         "designation": "Product Manager",
-        "delay": "",
+        "delay": "200",
         "memberData": [
             {
                 "id": 1,
@@ -390,7 +390,7 @@
         "bgThumb": "32.jpg",
         "name": "Sarah Albert",
         "designation": "Financial Consultant",
-        "delay": "",
+        "delay": "300",
         "memberData": [
             {
                 "id": 1,
@@ -454,7 +454,7 @@
         "bgThumb": "32.jpg",
         "name": "Aleesha Brown",
         "designation": "Developer",
-        "delay": "",
+        "delay": "400",
         "memberData": [
             {
                 "id": 1,

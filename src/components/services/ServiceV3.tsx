@@ -3,6 +3,7 @@ import ServicesV3Data from "@/assets/jsonData/services/ServicesV3Data.json"
 import SingleServiceV3 from "./SingleServiceV3";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Navigation, Pagination } from "swiper/modules";
+import SplitText from "../animation/SplitText";
 
 const ServiceV3 = () => {
     return (
@@ -13,7 +14,18 @@ const ServiceV3 = () => {
                         <div className="col-lg-6 offset-lg-3">
                             <div className="site-heading text-center">
                                 <h4 className="sub-title">What we do</h4>
-                                <h2 className="title split-text">Techincal solutions that helps Tech business.</h2>
+                                <h2 className="title split-text">
+                                    <SplitText
+                                        delay={10}
+                                        animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                        animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                        easing="easeOutCubic"
+                                        threshold={0.2}
+                                        rootMargin="-50px"
+                                    >
+                                        Techincal solutions that helps Tech business.
+                                    </SplitText>
+                                </h2>
                                 <div className="devider" />
                             </div>
                         </div>
@@ -22,7 +34,7 @@ const ServiceV3 = () => {
                 <div className="container container-stage">
                     <div className="row">
                         <div className="col-lg-12">
-                            <Swiper className="services-carousel swiper wow fadeInUp" data-aos-delay="100"
+                            <Swiper className="services-carousel" data-aos="fade-up" data-aos-delay="100"
                                 loop={true}
                                 freeMode={true}
                                 grabCursor={true}

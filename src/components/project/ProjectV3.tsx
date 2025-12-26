@@ -17,7 +17,7 @@ const ProjectV3 = ({ hasTitle }: DataType) => {
                             <div className="row align-center">
                                 <div className="col-lg-6">
                                     <h4 className="sub-title">Recent Projects</h4>
-                                    <h2 className="title">Latest & most recent completed projects</h2>
+                                    <h2 className="title" data-aos="fade-up">Latest & most recent completed projects</h2>
                                 </div>
                                 <div className="col-lg-5 offset-lg-1 text-end">
                                     <Link className="btn-circle circle-border" href="/projects"><i className="fas fa-long-arrow-right" /> All Projects</Link>

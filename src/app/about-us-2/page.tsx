@@ -6,6 +6,10 @@ import ProcessV2 from '@/components/process/ProcessV2';
 import TeamV4 from '@/components/team/TeamV4';
 import TestimonialV4 from '@/components/testimonial/TestimonialV4';
 
+export const metadata = {
+    title: "Tekni - About Us 2"
+};
+
 const AboutUs2Page = () => {
     return (
         <>
@@ -13,8 +17,8 @@ const AboutUs2Page = () => {
                 <BreadCrumb title="About Us 2" breadCrumb="about-us-2" />
                 <AboutV2 />
                 <ProcessV2 />
-                <PartnerV1 sectionClass="default-padding" />
-                <TeamV4 />
+                <PartnerV1 sectionClass="default-padding" hasBg={true} />
+                <TeamV4 hasTitle={true} />
                 <TestimonialV4 />
             </LayoutV1>
         </>

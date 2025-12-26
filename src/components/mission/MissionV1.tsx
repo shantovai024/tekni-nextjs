@@ -15,8 +15,8 @@ const MissionV1 = () => {
                         </div>
                         <div className="col-lg-6 pl-100 pl-md-15 pl-xs-15 mt-md-50 mt-xs-40">
                             <div className="thumb-style-two">
-                                <Image className="wow fadeInUp" src="/assets/img/about/7.jpg" alt="Image Not Found" width={635} height={810} />
-                                <div className="card-style-one wow fadeInDown" data-aos-delay="100">
+                                <Image data-aos="fade-up" src="/assets/img/about/7.jpg" alt="Image Not Found" width={635} height={810} />
+                                <div className="card-style-one" data-aos="fade-down" data-aos-delay="100">
                                     <div className="icon">
                                         <Image src="/assets/img/icon/16.png" alt="Image Not Found" width={130} height={100} />
                                     </div>

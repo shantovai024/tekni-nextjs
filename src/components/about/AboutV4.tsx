@@ -10,7 +10,9 @@ const AboutV4 = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <h4 className="sub-title">About Company</h4>
-                                <h2 className="title">Choose thebest IT service company in the city.</h2>
+                                <h2 className="title" data-aos="fade-up">
+                                    Choose thebest IT service company in the city.
+                                </h2>
                             </div>
                             <div className="col-lg-5 offset-lg-1">
                                 <p>

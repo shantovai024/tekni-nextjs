@@ -32,7 +32,6 @@ const BannerV5 = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

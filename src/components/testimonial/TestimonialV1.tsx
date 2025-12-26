@@ -12,7 +12,7 @@ const TestimonialV1 = () => {
                 <div className="container">
                     <div className="row align-center">
                         <div className="col-lg-4">
-                            <div className="testimonial-thumb wow fadeInUp">
+                            <div className="testimonial-thumb" data-aos="fade-up">
                                 <div className="thumb-item">
                                     <Image src="/assets/img/illustration/5.png" alt="illustration" width={500} height={705} />
                                     <div className="mini-shape">
@@ -22,19 +22,17 @@ const TestimonialV1 = () => {
                             </div>
                         </div>
                         <div className="col-lg-7 offset-lg-1">
-                            <Swiper className="testimonial-carousel swiper wow fadeInUp" data-aos-delay="100"
+                            <Swiper className="testimonial-carousel" data-aos-delay="100"
                                 direction={"horizontal"}
                                 loop={true}
                                 autoplay={true}
                                 modules={[Keyboard]}
                             >
-                                <div className="swiper-wrapper">
-                                    {TestimonialV1Data.map(testimonial =>
-                                        <SwiperSlide key={testimonial.id}>
-                                            <SingleTestimonialV1 testimonial={testimonial} />
-                                        </SwiperSlide>
-                                    )}
-                                </div>
+                                {TestimonialV1Data.map(testimonial =>
+                                    <SwiperSlide key={testimonial.id}>
+                                        <SingleTestimonialV1 testimonial={testimonial} />
+                                    </SwiperSlide>
+                                )}
                             </Swiper>
                         </div>
                     </div>

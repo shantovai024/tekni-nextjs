@@ -14,7 +14,7 @@ const ProcessV2 = () => {
                         <div className="row">
                             <div className="col-lg-4">
                                 <h4 className="sub-title">Work Process</h4>
-                                <h2 className="title">Some easy steps to process!</h2>
+                                <h2 className="title" data-aos="fade-up">Some easy steps to process!</h2>
                             </div>
                             <div className="col-lg-6 offset-lg-2">
                                 <p>

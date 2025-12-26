@@ -11,6 +11,10 @@ import ServiceV6 from "@/components/services/ServiceV6";
 import TeamV4 from "@/components/team/TeamV4";
 import TechnologyV2 from "@/components/technology/TechnologyV2";
 
+export const metadata = {
+    title: "Tekni - Home 6"
+};
+
 const Home6Page = () => {
     return (
         <>
@@ -19,11 +23,11 @@ const Home6Page = () => {
                 <BannerV6 />
                 <PartnerV2 sectionClass="default-padding-top" />
                 <AboutV5 />
-                <ServiceV6 />
+                <ServiceV6 hasTitle={true} sectionClass="default-padding" hasBg={true} />
                 <WhyChooseV4 />
                 <ExerciseV1 />
                 <TechnologyV2 />
-                <TeamV4 />
+                <TeamV4 hasTitle={true} />
                 <ProjectV3 hasTitle={true} />
                 <BlogV3 />
                 <FooterV2 />

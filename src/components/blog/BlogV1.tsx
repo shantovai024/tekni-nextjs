@@ -1,11 +1,15 @@
 import BlogV1Data from "@/assets/jsonData/blog/BlogV1Data.json"
 import SingleBlogV1 from "./SingleBlogV1";
 import SplitText from "../animation/SplitText";
+interface DataType {
+    hasBg?: boolean
+    sectionClass?: string
+}
 
-const BlogV1 = () => {
+const BlogV1 = ({ hasBg, sectionClass }: DataType) => {
     return (
         <>
-            <div className="home-blog-area default-padding bottom-less bg-gray bg-cover" style={{ backgroundImage: 'url(/assets/img/shape/banner.jpg)' }}>
+            <div className={`home-blog-area default-padding bottom-less ${sectionClass ? sectionClass : ""} ${hasBg ? "blog1-bg" : ""}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">

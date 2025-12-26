@@ -11,6 +11,10 @@ import ProjectV4 from "@/components/project/ProjectV4";
 import ServiceV4 from "@/components/services/ServiceV4";
 import TestimonialV3 from "@/components/testimonial/TestimonialV3";
 
+export const metadata = {
+    title: "Tekni - Home 4"
+};
+
 const Home4Page = () => {
     return (
         <>

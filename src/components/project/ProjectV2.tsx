@@ -3,8 +3,13 @@ import ProjectV2Data from "@/assets/jsonData/project/ProjectV2Data.json"
 import Link from "next/link";
 import { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
+import SplitText from "../animation/SplitText";
 
-const ProjectV2 = () => {
+interface DataType {
+    hasTitle?: boolean;
+}
+
+const ProjectV2 = ({ hasTitle }: DataType) => {
 
     const galleryRef = useRef(null);
     const [loadedImagesCount, setLoadedImagesCount] = useState(0);
@@ -47,18 +52,34 @@ const ProjectV2 = () => {
     return (
         <>
             <div className="project-style-two-area bg-gray default-padding">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8 offset-lg-2">
-                            <div className="site-heading text-center">
-                                <h4 className="sub-title">Recent Gallery</h4>
-                                <h2 className="title split-text">Latest & most recent <br /> completed projects
-                                </h2>
-                                <div className="devider" />
+
+                {/* HasTitle */}
+
+                {hasTitle &&
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8 offset-lg-2">
+                                <div className="site-heading text-center">
+                                    <h4 className="sub-title">Recent Gallery</h4>
+                                    <h2 className="title split-text">
+                                        <SplitText
+                                            delay={10}
+                                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                            easing="easeOutCubic"
+                                            threshold={0.2}
+                                            rootMargin="-50px"
+                                        >
+                                            Latest & most recent <br /> completed projects
+                                        </SplitText>
+                                    </h2>
+                                    <div className="devider" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                }
+
                 <div className="container">
                     <div className="container">
                         <div className="row">
@@ -67,13 +88,13 @@ const ProjectV2 = () => {
                                     <div id="gallery-masonary" className="gallery-items colums-2" ref={galleryRef}>
                                         {ProjectV2Data.map(data =>
 
-                                            <div className={`gallery-item wow fadeInUp ${activeProjectId === data.id ? 'active' : ''}`}
-                                                data-aos-delay="100"
+                                            <div className={`gallery-item ${activeProjectId === data.id ? 'active' : ''}`}
+
                                                 key={data.id}
                                                 onMouseEnter={() => handleMouseEnter(data.id)}
                                                 onMouseLeave={handleMouseLeave}
                                             >
-                                                <div className={`gallery-style-one`}>
+                                                <div className="gallery-style-one">
                                                     <Image
                                                         src={`/assets/img/gallery/${data.thumb}`}
                                                         alt="Thumb"
@@ -99,7 +120,8 @@ const ProjectV2 = () => {
                                     <div className="col-lg-12 text-center">
                                         <div className="load-more-info text-center mt-60">
                                             <p>
-                                                Are you interested to show more portfolios? <Link href="/project">Load More</Link>
+                                                Are you interested to show more portfolios?
+                                                <Link href="/project">Load More</Link>
                                             </p>
                                         </div>
                                     </div>

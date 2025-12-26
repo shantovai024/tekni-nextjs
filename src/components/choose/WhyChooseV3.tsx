@@ -16,7 +16,7 @@ const WhyChooseV3 = () => {
                         </div>
                         <div className="col-xl-6 offset-xl-1">
                             <div className="choose-us-style-three-info">
-                                <h2 className="title">Get exclusive IT solutions and services for techni</h2>
+                                <h2 className="title" data-aos="fade-up">Get exclusive IT solutions and services for techni</h2>
                                 <p>
                                     Design of choice for many of the world’s leading enterprises end technology challengers. We help businesses elevate the alue ere is custom software development, product design, sed apor lored incididunt ut labored et dolore magna.
                                 </p>

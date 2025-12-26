@@ -7,14 +7,15 @@ interface DataType {
     thumb: string;
     role: string;
     name: string;
+    delay?: string
 }
 
 const SingleTeamV4 = ({ team }: { team: DataType }) => {
-    const { id, thumb, name, role } = team
+    const { id, thumb, name, role, delay } = team
 
     return (
         <>
-            <div className="item">
+            <div className="item" data-aos="fade-up" data-aos-delay={delay}>
                 <div className="thumb">
                     <Image src={`/assets/img/team/${thumb}`} alt="Image Not Found" width={800} height={900} />
                     <span>{role}</span>

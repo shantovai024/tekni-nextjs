@@ -9,7 +9,6 @@ import '@/assets/css/animate.css';
 import '@/assets/css/font-awesome.css';
 import '@/assets/css/flaticon-set.css';
 import '@/assets/css/elegant-icons.css';
-// import '@/assets/css/themify-icons.css';
 
 import '@/assets/css/gallery.css';
 import '@/assets/css/helper.css';
@@ -30,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <Dependency />
         {children}

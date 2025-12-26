@@ -13,7 +13,7 @@ const TechnologyV2 = () => {
                             <div className="left-heading-two">
                                 <div className="left-info">
                                     <h4 className="sub-title">Technology Index</h4>
-                                    <h2 className="title">We’re using latest technology in projects</h2>
+                                    <h2 className="title" data-aos="fade-up">We’re using latest technology in projects</h2>
                                 </div>
                                 <div className="right-info">
                                     {TechFactV2Data.map(fact =>

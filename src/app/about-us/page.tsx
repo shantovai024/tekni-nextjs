@@ -6,6 +6,10 @@ import ProcessV1 from "@/components/process/ProcessV1";
 import TeamV1 from "@/components/team/TeamV1";
 import TestimonialV1 from "@/components/testimonial/TestimonialV1";
 
+export const metadata = {
+    title: "Tekni - About Us"
+};
+
 const AboutUsPage = () => {
     return (
         <>
@@ -14,7 +18,7 @@ const AboutUsPage = () => {
                 <AboutV1 />
                 <ProcessV1 sectionClass="bg-gray bg-cover" />
                 <PartnerV1 sectionClass="default-padding" />
-                <TeamV1 hasBg={true} />
+                <TeamV1 hasBg={true} hasTitle={true} />
                 <TestimonialV1 />
             </LayoutV1>
         </>

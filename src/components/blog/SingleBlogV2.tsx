@@ -18,7 +18,7 @@ const SingleBlogV2 = ({ blog }: { blog: DataType }) => {
 
     return (
         <>
-            <div className={`blog-style-one solid wow fadeInUp ${sectionClass}`} data-aos-delay={delay}>
+            <div className={`blog-style-one solid ${sectionClass}`} data-aos="fade-up" data-aos-delay={delay}>
                 <div className="thumb">
                     <Image src={`/assets/img/blog/${thumb}`} alt="Image Not Found" width={800} height={900} />
                     <div className="tags"><Link href="#" scroll={false}>{tag}</Link></div>

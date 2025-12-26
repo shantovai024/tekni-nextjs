@@ -16,11 +16,11 @@ const ContactV1 = () => {
                             </div>
                             <div className="contact-style-one-info">
                                 <h2 className="split-text">Contact Information</h2>
-                                <p className="wow fadeInUp" data-aos-delay="100">
+                                <p data-aos="fade-up" data-aos-delay="100">
                                     Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.
                                 </p>
                                 <ul>
-                                    <li className="wow fadeInUp">
+                                    <li data-aos="fade-up">
                                         <div className="icon">
                                             <i className="fas fa-phone-alt" />
                                         </div>
@@ -29,7 +29,7 @@ const ContactV1 = () => {
                                             <a href="tel:+4733378901">+4733378901</a>
                                         </div>
                                     </li>
-                                    <li className="wow fadeInUp" data-aos-delay="300">
+                                    <li data-aos="fade-up" data-aos-delay="300">
                                         <div className="icon">
                                             <i className="fas fa-map-marker-alt" />
                                         </div>
@@ -40,7 +40,7 @@ const ContactV1 = () => {
                                             </p>
                                         </div>
                                     </li>
-                                    <li className="wow fadeInUp" data-aos-delay="500">
+                                    <li data-aos="fade-up" data-aos-delay="500">
                                         <div className="icon">
                                             <i className="fas fa-envelope-open-text" />
                                         </div>
@@ -53,7 +53,7 @@ const ContactV1 = () => {
                             </div>
                         </div>
                         <div className="contact-stye-one col-lg-7 pl-60 pl-md-15 pl-xs-15 mt-md-50">
-                            <div className="contact-form-style-one wow fadeInLeft" data-aos-delay="150">
+                            <div className="contact-form-style-one" data-aos="fade-left" data-aos-delay="150">
                                 <h5 className="sub-title">Have Questions?</h5>
                                 <h2 className="title">Send us a Massage</h2>
                                 <CounterForm />

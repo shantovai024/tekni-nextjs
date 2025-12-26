@@ -5,7 +5,7 @@ import SingleProgress from "./SingleProgress";
 const SkillV1 = () => {
     return (
         <>
-            <div className="skill-facts-area default-padding bg-dark text-light" style={{ backgroundImage: 'url(assets/img/shape/49.png)' }}>
+            <div className="skill-facts-area default-padding bg-dark text-light" style={{ backgroundImage: 'url(/assets/img/shape/49.png)' }}>
                 <div className="container">
                     <div className="row align-center">
                         <div className="col-lg-5">
@@ -16,39 +16,20 @@ const SkillV1 = () => {
                         <div className="col-lg-7 pl-60 pl-md-15 pl-xs-15">
                             <div className="skill-fact-info">
                                 <h4 className="sub-title">Skill & Facts</h4>
-                                <h2 className="title">We keep our self udated with latest trends</h2>
+                                <h2 className="title" data-aos="fade-up">We keep our self udated with latest trends</h2>
                                 <p>
                                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum.
                                 </p>
                                 <div className="circle-progress">
-
                                     {SkillV1Data.map(skill =>
                                         <SingleProgress skill={skill} key={skill.id} />
                                     )}
-
-
-
-                                    {/* <div className="progressbar">
-                                        <div className="circle" data-percent={84}>
-                                            <strong />
-                                        </div>
-                                        <h4>Big Data & AI</h4>
-                                    </div>
-
-                                    <div className="progressbar">
-                                        <div className="circle" data-percent={88}>
-                                            <strong />
-                                        </div>
-                                        <h4>Predictive Analysis</h4>
-                                    </div> */}
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

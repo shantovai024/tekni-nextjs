@@ -2,6 +2,10 @@ import BreadCrumb from "@/components/breadCrumb/BreadCrumb";
 import LayoutV1 from "@/components/layouts/LayoutV1";
 import TeamV1 from "@/components/team/TeamV1";
 
+export const metadata = {
+    title: "Tekni - Team"
+};
+
 const TeamPage = () => {
     return (
         <>

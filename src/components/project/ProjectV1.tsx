@@ -36,7 +36,7 @@ const ProjectV1 = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <Swiper
-                                className="project-style-one-carousel swiper wow fadeInUp"
+                                className="project-style-one-carousel"
                                 direction={"horizontal"}
                                 loop={true}
                                 grabCursor={true}

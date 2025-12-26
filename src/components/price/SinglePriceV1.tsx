@@ -37,7 +37,7 @@ const SinglePriceV1 = ({ plan }: { plan: DataType }) => {
         <div
             className={`pricing-style-one wow fadeInUp ${isActive ? "active" : ""}`}
             data-aos-delay={delay}
-            style={{ backgroundImage: "url(assets/img/shape/15.webp)" }}
+            style={{ backgroundImage: "url(/assets/img/shape/15.webp)" }}
         >
             <div className="pricing-header">
                 <h4>{title}</h4>

@@ -21,7 +21,7 @@ const SinglePriceV2 = ({ plan }: { plan: DataType }) => {
     const { icon, title, price, discount, duration, buttonClass, buttonText, features } = plan;
 
     return (
-        <div className="pricing-style-two wow fadeInUp">
+        <div className="pricing-style-two" data-aos="fade-up" data-aos-delay="">
             <div className="pricing-header">
                 <div className="icon">
                     <Image

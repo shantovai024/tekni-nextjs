@@ -11,6 +11,10 @@ interface PageProps {
     params: Promise<Params>;
 }
 
+export const metadata = {
+    title: "Tekni - Team Details"
+};
+
 const TeamDetailsPage = async ({ params }: PageProps) => {
 
     const { id } = await params;

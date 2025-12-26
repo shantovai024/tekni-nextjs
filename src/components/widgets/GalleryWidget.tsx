@@ -18,9 +18,9 @@ const GalleryWidget = () => {
                             {GalleryData.map(gallery =>
                                 <li key={gallery.id} className='widget-gallery'>
                                     <div className="single">
-                                        <Image src={`/assets/img/gallery/${gallery.thumb}`} alt="thumb" width={800} height={800} />
+                                        <Image src={`/assets/img/blog/${gallery.thumb}`} alt="thumb" width={800} height={800} />
                                         <Link href="#" scroll={false} className='widget-link'>
-                                            <PhotoView src={`/assets/img/gallery/${gallery.thumb}`}>
+                                            <PhotoView src={`/assets/img/blog/${gallery.thumb}`}>
                                                 <span className="widget-icon">
                                                     <i className="fas fa-plus"></i>
                                                 </span>

@@ -4,6 +4,7 @@ import Counter from "../counter/Counter";
 import ModalVideo from "react-modal-video";
 import { useState } from "react";
 import Link from "next/link";
+import SplitText from "../animation/SplitText";
 
 const WhyChooseV2 = () => {
 
@@ -17,8 +18,19 @@ const WhyChooseV2 = () => {
                         <div className="col-lg-6">
                             <div className="choose-us-style-two default-padding-bottom">
                                 <div className="content">
-                                    <h2 className="title wow fadeInUp">Preparing for your success trusted source</h2>
-                                    <div className="wow fadeInUp" data-aos-delay="100">
+                                    <h2 className="title">
+                                        <SplitText
+                                            delay={10}
+                                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                            easing="easeOutCubic"
+                                            threshold={0.2}
+                                            rootMargin="-50px"
+                                        >
+                                            Preparing for your success trusted source
+                                        </SplitText>
+                                    </h2>
+                                    <div data-aos="fade-up" data-aos-delay="100">
                                         <p>
                                             We believe in four pillars of influence that drive our growth. This is ingrained in everything we do We use technology to create a better and smarter environment.
                                         </p>
@@ -29,7 +41,7 @@ const WhyChooseV2 = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="expertise text-light wow fadeInUp" data-aos-delay="200" style={{ backgroundImage: 'url(/assets/img/banner/7.jpg)' }}>
+                                <div className="expertise text-light" data-aos="fade-up" data-aos-delay="200" style={{ backgroundImage: 'url(/assets/img/banner/7.jpg)' }}>
                                     <div className="left">
                                         <h2><strong>28</strong> Years of experience</h2>
                                     </div>

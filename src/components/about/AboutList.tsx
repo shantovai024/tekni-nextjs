@@ -11,7 +11,7 @@ const AboutList = ({ list }: { list: DataType }) => {
 
     return (
         <>
-            <div className="list-item-style-two wow fadeInUp" data-aos-delay={delay}>
+            <div className="list-item-style-two" data-aos="fade-up" data-aos-delay={delay}>
                 <div className="number">{number}</div>
                 <div className="info">
                     <h4>{title}</h4>

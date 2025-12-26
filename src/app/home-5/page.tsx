@@ -11,6 +11,10 @@ import SkillV1 from "@/components/skills/SkillV1";
 import TeamV3 from "@/components/team/TeamV3";
 import TestimonialV4 from "@/components/testimonial/TestimonialV4";
 
+export const metadata = {
+    title: "Tekni - Home 5"
+};
+
 const Home5Page = () => {
     return (
         <>
@@ -21,7 +25,7 @@ const Home5Page = () => {
             <WhyChooseV3 />
             <ProcessV3 />
             <SkillV1 />
-            <TeamV3 />
+            <TeamV3 hasTitle={true} />
             <TestimonialV4 />
             <PartnerV2 />
             <BlogV1 />

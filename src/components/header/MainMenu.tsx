@@ -138,7 +138,7 @@ const MainMenu = ({ navbarPlacement }: DataType) => {
                                         >
                                             <li><Link href="/about-us">About Us</Link></li>
                                             <li><Link href="/about-us-2">About Us Two</Link></li>
-                                            <li><Link href="/about-us-3">About Style Trhee</Link></li>
+                                            <li><Link href="/about-us-3">About Style Three</Link></li>
                                             <li><Link href="/about-us-4">About Style Four</Link></li>
                                             <li><Link href="/about-us-5">About Style Five</Link></li>
                                         </ul>
@@ -163,7 +163,7 @@ const MainMenu = ({ navbarPlacement }: DataType) => {
                                             <li><Link href="/project">Project Style One</Link></li>
                                             <li><Link href="/project-2">Project Style Two</Link></li>
                                             <li><Link href="/project-3">Project Style Three</Link></li>
-                                            <li><Link href="/project-details">Project Details</Link></li>
+                                            <li><Link href="/project-details/1">Project Details</Link></li>
                                             <li><Link href="/faq">FAQ Page</Link></li>
                                         </ul>
                                     </div>

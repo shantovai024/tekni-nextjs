@@ -37,13 +37,11 @@ const PartnerV2 = ({ sectionClass }: DataType) => {
                                     }}
                                     modules={[Keyboard, Autoplay]}
                                 >
-                                    <div className="swiper-wrapper">
-                                        {BrandV2Data.map(brand =>
-                                            <SwiperSlide key={brand.id}>
-                                                <Image src={`/assets/img/brand/${brand.thumb}`} alt="Image Not Found" width={300} height={100} />
-                                            </SwiperSlide>
-                                        )}
-                                    </div>
+                                    {BrandV2Data.map(brand =>
+                                        <SwiperSlide key={brand.id}>
+                                            <Image src={`/assets/img/brand/${brand.thumb}`} alt="Image Not Found" width={300} height={100} />
+                                        </SwiperSlide>
+                                    )}
                                 </Swiper>
                             </div>
                         </div>

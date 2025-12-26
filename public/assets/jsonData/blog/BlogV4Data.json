@@ -6,7 +6,7 @@
         "authorImage": "6.jpg",
         "date": "12 August, 2025",
         "title": "Discovery incommode earnestly commanded if.",
-        "delay": "300"
+        "delay": "100"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "authorImage": "5.jpg",
         "date": "12 July, 2025",
         "title": "Expression acceptance imprudence particular",
-        "delay": "500"
+        "delay": "300"
     },
     {
         "id": 3,
@@ -24,6 +24,6 @@
         "authorImage": "7.jpg",
         "date": "06 December, 2025",
         "title": "Considered imprudence of technical friendship.",
-        "delay": "700"
+        "delay": "500"
     }
 ]

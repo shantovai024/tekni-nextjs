@@ -7,6 +7,10 @@ import ProcessV1 from "@/components/process/ProcessV1";
 import ServiceV2 from "@/components/services/ServiceV2";
 import TeamV1 from "@/components/team/TeamV1";
 
+export const metadata = {
+    title: "Tekni - Services 2"
+};
+
 const Service2Page = () => {
     return (
         <>

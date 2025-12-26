@@ -55,8 +55,8 @@ const ServiceDetailsContent = ({ serviceInfo }: { serviceInfo: DataType }) => {
                                 <div className="faq-style-one dark mt-40">
                                     <h3 className="mb-30">Common Question for this project</h3>
                                     <div className="accordion" id="faqAccordion">
-                                        {FaqV1Data.map(faq =>
-                                            <SingleFaq faq={faq} key={faq.id} />
+                                        {FaqV1Data.map((faq, index) =>
+                                            <SingleFaq faq={faq} key={faq.id} index={index} />
                                         )}
                                     </div>
                                 </div>

@@ -7,14 +7,15 @@ interface DataType {
     icon: string;
     title: string;
     description: string;
+    delay: string;
 }
 
 const SingleServiceV2 = ({ service }: { service: DataType }) => {
-    const { id, thumb, icon, title, description } = service;
+    const { id, thumb, icon, title, description, delay } = service;
 
     return (
         <>
-            <div className="services-style-two active">
+            <div className="services-style-two active" data-aos="fade-up" data-aos-delay={delay}>
                 <div className="thumb">
                     <Image src={`/assets/img/service/${thumb}`} alt="Thumb" width={800} height={600} />
                     <div className="title">

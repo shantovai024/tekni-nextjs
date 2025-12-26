@@ -5359,6 +5359,18 @@ a.btn-circle.circle-border:hover i {
 	color: var(--white);
 }
 
+.CircularProgressbar {
+	width: 120px;
+	height: 120px;
+	margin-bottom: 15px;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+	fill: var(--white);
+	font-size: 25px;
+	font-weight: 600;
+}
+
 
 /* ============================================================== 
     # Faq
@@ -9231,6 +9243,7 @@ a.btn-arrow {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .tesimoinial-style-four-area .left-heading .row {
@@ -10022,6 +10035,7 @@ ul.list-card li p {
 	position: relative;
 	border-radius: 50%;
 	line-height: 25px;
+	cursor: pointer;
 }
 
 .services-swiper-nav>div::after {
@@ -10266,6 +10280,10 @@ ul.list-card li p {
 /* ============================================================== 
     # Services Style Six
 =================================================================== */
+.services-style-six-area.service6-bg {
+	background-image: url('/assets/img/shape/54.png');
+}
+
 .services-style-six-area {
 	background-size: contain;
 	background-position: bottom center;
@@ -10671,6 +10689,11 @@ ul.list-card li p {
 /* ============================================================== 
     # Blog Style
 =================================================================== */
+
+.blog1-bg {
+	background-image: url('/assets/img/shape/banner.jpg') no-repeat center center;
+	background-size: cover;
+}
 
 .blog-style-one {
 	background: var(--white);

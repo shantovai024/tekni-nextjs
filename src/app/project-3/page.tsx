@@ -2,6 +2,10 @@ import BreadCrumb from "@/components/breadCrumb/BreadCrumb";
 import LayoutV1 from "@/components/layouts/LayoutV1";
 import ProjectV2 from "@/components/project/ProjectV2";
 
+export const metadata = {
+    title: "Tekni - Project 3"
+};
+
 const Project3Page = () => {
     return (
         <>

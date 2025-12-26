@@ -12,18 +12,22 @@ import ProjectV2 from "@/components/project/ProjectV2";
 import ServiceV2 from "@/components/services/ServiceV2";
 import TestimonialV2 from "@/components/testimonial/TestimonialV2";
 
+export const metadata = {
+    title: "Tekni - Home 2"
+};
+
 const Home2Page = () => {
     return (
         <>
             <HeaderV2 />
             <BannerV2 />
             <FeatureV1 />
-            <ServiceV2 />
-            <PartnerV1 sectionClass="default-padding"/>
+            <ServiceV2 hasTitle={true} />
+            <PartnerV1 sectionClass="default-padding" />
             <AboutV2 />
             <WhyChooseV2 />
             <TestimonialV2 />
-            <ProjectV2 />
+            <ProjectV2 hasTitle={true} />
             <ContactV1 />
             <FunFactV1 />
             <BlogV2 />

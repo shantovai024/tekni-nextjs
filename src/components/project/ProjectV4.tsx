@@ -23,8 +23,8 @@ const ProjectV4 = ({ hasTitle }: DataType) => {
                             <div className="left-heading">
                                 <div className="row">
                                     <div className="col-lg-6">
-                                        <h4 className="sub-title">Recnt Projects</h4>
-                                        <h2 className="title">Latest & most recent completed projects</h2>
+                                        <h4 className="sub-title">Recent Projects</h4>
+                                        <h2 className="title" data-aos="fade-up">Latest & most recent completed projects</h2>
                                     </div>
                                     <div className="col-lg-5 offset-lg-1">
                                         <p>
@@ -39,7 +39,7 @@ const ProjectV4 = ({ hasTitle }: DataType) => {
                 <div className="container-stage container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <Swiper className="project-style-two-carousel wow fadeInUp" data-aos-delay="100"
+                            <Swiper className="project-style-two-carousel"
                                 loop={true}
                                 freeMode={true}
                                 grabCursor={true}

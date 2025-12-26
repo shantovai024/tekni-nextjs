@@ -14,7 +14,8 @@
       { "text": "Secure finance backup", "icon": "fas fa-check-circle", "available": true },
       { "text": "50GB Monthly Bandwidth", "icon": "fas fa-times-circle", "available": false },
       { "text": "24/7 System monitoring", "icon": "fas fa-times-circle", "available": false }
-    ]
+    ],
+    "delay": "100"
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       { "text": "Secure finance backup", "icon": "fas fa-check-circle", "available": true },
       { "text": "50GB Monthly Bandwidth", "icon": "fas fa-check-circle", "available": true },
       { "text": "24/7 System monitoring", "icon": "fas fa-times-circle", "available": false }
-    ]
+    ],
+    "delay": "200"
   },
   {
     "id": 3,
@@ -48,6 +50,7 @@
       { "text": "Secure finance backup", "icon": "fas fa-check-circle", "available": true },
       { "text": "50GB Monthly Bandwidth", "icon": "fas fa-check-circle", "available": true },
       { "text": "24/7 System monitoring", "icon": "fas fa-check-circle", "available": true }
-    ]
+    ],
+    "delay": "500"
   }
 ]

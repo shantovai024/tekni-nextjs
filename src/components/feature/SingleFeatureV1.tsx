@@ -13,7 +13,7 @@ const SingleFeatureV1 = ({ feature }: { feature: DataType }) => {
 
     return (
         <>
-            <div className="feature-style-one wow fadeInUp" data-aos-delay={delay}>
+            <div className="feature-style-one" data-aos="fade-up" data-aos-delay={delay}>
                 <div className="icon">
                     <Image src={`/assets/img/icon/${icon}`} alt="Image Not Found" width={128} height={128} />
                 </div>

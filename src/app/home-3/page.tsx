@@ -11,6 +11,10 @@ import TeamV2 from "@/components/team/TeamV2";
 import TechnologyV1 from "@/components/technology/TechnologyV1";
 import TestimonialV1 from "@/components/testimonial/TestimonialV1";
 
+export const metadata = {
+    title: "Tekni - Home 3"
+};
+
 const Home3Page = () => {
     return (
         <>

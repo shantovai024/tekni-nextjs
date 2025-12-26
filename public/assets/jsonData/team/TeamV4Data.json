@@ -4,6 +4,7 @@
         "thumb": "5.jpg",
         "role": "Web Developer",
         "name": "Aleesha Brown",
+        "delay": "100",
         "memberData": [
             {
                 "id": 1,
@@ -65,6 +66,7 @@
         "thumb": "6.jpg",
         "role": "UI Designer",
         "name": "Kevin Martin",
+        "delay": "250",
         "memberData": [
             {
                 "id": 1,
@@ -126,6 +128,7 @@
         "thumb": "7.jpg",
         "role": "Product Marketing",
         "name": "Sarah Albert",
+        "delay": "400",
         "memberData": [
             {
                 "id": 1,
@@ -187,6 +190,7 @@
         "thumb": "1.jpg",
         "role": "Marketing",
         "name": "Aleesha Brown",
+        "delay": "550",
         "memberData": [
             {
                 "id": 1,
@@ -248,6 +252,7 @@
         "thumb": "2.jpg",
         "role": "Web Developer",
         "name": "Aleesha Brown",
+        "delay": "",
         "memberData": [
             {
                 "id": 1,
@@ -309,6 +314,7 @@
         "thumb": "3.jpg",
         "role": "UI Designer",
         "name": "Kevin Martin",
+        "delay": "",
         "memberData": [
             {
                 "id": 1,
@@ -370,6 +376,7 @@
         "thumb": "4.jpg",
         "role": "Product Marketing",
         "name": "Sarah Albert",
+        "delay": "",
         "memberData": [
             {
                 "id": 1,
@@ -430,7 +437,8 @@
         "id": 8,
         "thumb": "8.jpg",
         "role": "Marketing",
-        "name": "Jacob MArtin",
+        "name": "Jacob Martin",
+        "delay": "",
         "memberData": [
             {
                 "id": 1,

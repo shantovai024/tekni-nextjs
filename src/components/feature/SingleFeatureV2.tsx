@@ -14,7 +14,7 @@ const SingleFeatureV2 = ({ feature }: { feature: DataType }) => {
 
     return (
         <>
-            <div className="feature-style-two wow fadeInUp" data-aos-delay={delay}>
+            <div className="feature-style-two" data-aos="fade-up" data-aos-delay={delay}>
                 <div className="thumb">
                     <Image src={`/assets/img/service/${thumb}`} alt="Image Not Found" width={600} height={350} />
                 </div>

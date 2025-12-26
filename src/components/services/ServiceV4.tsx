@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import ServicesV4Data from "@/assets/jsonData/services/ServicesV4Data.json";
 import SingleServiceV4 from './SingleServiceV4';
+import SplitText from '../animation/SplitText';
 
 interface DataType {
     hasTitle?: boolean
@@ -23,7 +24,18 @@ const ServiceV4 = ({ hasTitle, sectionClass }: DataType) => {
                                 <div className="col-lg-8 offset-lg-2">
                                     <div className="site-heading text-center">
                                         <h4 className="sub-title">Our Services</h4>
-                                        <h2 className="title split-text">Technical solutions that <br /> helps Tech business.</h2>
+                                        <h2 className="title split-text">
+                                            <SplitText
+                                                delay={10}
+                                                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                                easing="easeOutCubic"
+                                                threshold={0.2}
+                                                rootMargin="-50px"
+                                            >
+                                                Technical solutions that <br /> helps Tech business.
+                                            </SplitText>
+                                        </h2>
                                         <div className="devider" />
                                     </div>
                                 </div>
@@ -31,6 +43,7 @@ const ServiceV4 = ({ hasTitle, sectionClass }: DataType) => {
                         </div>
                     </>
                 }
+                
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">

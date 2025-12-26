@@ -4,6 +4,10 @@ import LayoutV1 from "@/components/layouts/LayoutV1";
 import PriceV1 from "@/components/price/PriceV1";
 import TestimonialV4 from "@/components/testimonial/TestimonialV4";
 
+export const metadata = {
+    title: "Tekni - Pricing"
+};
+
 const PricingPage = () => {
     return (
         <>

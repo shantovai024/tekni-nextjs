@@ -3,6 +3,10 @@ import LayoutV1 from "@/components/layouts/LayoutV1";
 import ServicesV1Data from "@/assets/jsonData/services/ServicesV1Data.json"
 import ServiceDetailsContent from "@/components/services/ServiceDetailsContent";
 
+export const metadata = {
+    title: "Tekni - Services Details"
+};
+
 interface Params {
     id: string;
 }

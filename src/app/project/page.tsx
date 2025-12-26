@@ -4,6 +4,10 @@ import ProcessV2 from "@/components/process/ProcessV2";
 import ProjectV3 from "@/components/project/ProjectV3";
 import TeamV3 from "@/components/team/TeamV3";
 
+export const metadata = {
+    title: "Tekni - Project"
+};
+
 const ProjectPage = () => {
     return (
         <>
@@ -11,7 +15,7 @@ const ProjectPage = () => {
                 <BreadCrumb title="Our Projects" breadCrumb="project" />
                 <ProjectV3 />
                 <ProcessV2 />
-                <TeamV3 />
+                <TeamV3 hasTitle={true} />
             </LayoutV1>
         </>
     );

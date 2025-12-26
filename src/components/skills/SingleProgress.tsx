@@ -31,10 +31,11 @@ const SingleProgress = ({ skill }: { skill: DataType }) => {
             { threshold: 0.5 }
         );
 
-        if (intersectionRef.current) observer.observe(intersectionRef.current);
+        const currentRef = intersectionRef.current;
+        if (currentRef) observer.observe(currentRef);
 
         return () => {
-            if (intersectionRef.current) observer.unobserve(intersectionRef.current);
+            if (currentRef) observer.unobserve(currentRef);
         };
     }, []);
 
@@ -56,8 +57,8 @@ const SingleProgress = ({ skill }: { skill: DataType }) => {
             <svg style={{ height: 0, width: 0 }}>
                 <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style={{ stopColor: "#49a760" }} />
-                        <stop offset="100%" style={{ stopColor: "#49a760" }} />
+                        <stop offset="0%" style={{ stopColor: "#1351d8" }} />
+                        <stop offset="100%" style={{ stopColor: "#9c00ff" }} />
                     </linearGradient>
                 </defs>
             </svg>
@@ -65,7 +66,7 @@ const SingleProgress = ({ skill }: { skill: DataType }) => {
             {/* Progress Bar */}
             <div className="progressbar">
                 <CircularProgressbar
-                    strokeWidth={3}
+                    strokeWidth={5}
                     value={progressValue}
                     text={`${progressValue}%`}
                     styles={gradientStyles}

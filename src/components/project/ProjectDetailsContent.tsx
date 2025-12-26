@@ -1,7 +1,13 @@
 import Image from "next/image";
 import SocialShareV1 from "../social/SocialShareV1";
 
-const ProjectDetailsContent = () => {
+interface DataType {
+    title: string;
+}
+
+const ProjectDetailsContent = ({ projectInfo }: { projectInfo: DataType }) => {
+    const { title } = projectInfo
+
     return (
         <>
             <div className="project-details-area default-padding">
@@ -39,7 +45,7 @@ const ProjectDetailsContent = () => {
                                     </div>
                                 </div>
                                 <div className="col-xl-8 col-lg-7 pr-35 pr-md-15 pr-xs-15 left-info mt-md-10">
-                                    <h2 className="title">Business planing solution</h2>
+                                    <h2 className="title">{title}</h2>
                                     <p>
                                         Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum fringilla facilisi volutpat fusce pharetra felis sapien varius quisque class convallis praesent est sollicitudin donec nulla venenatis, cursus fermentum netus posuere sociis porta risus habitant malesuada nulla habitasse hymenaeos.
                                     </p>

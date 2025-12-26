@@ -11,7 +11,7 @@ const ExerciseV1 = () => {
                         <div className="col-lg-6">
                             <div className="expertise-style-one-info">
                                 <h4 className="sub-title">Expert in it solution</h4>
-                                <h2 className="title">Preparing for your success, we provide truly outstanding IT solutions</h2>
+                                <h2 className="title" data-aos="fade-up">Preparing for your success, we provide truly outstanding IT solutions</h2>
                                 <p>
                                     Our team applies its extensive experience to determine strategies that best enable our clients. Accelerate innovation with world-class technology teams We match a fully remote team of incredible freelance talent for all your software.
                                 </p>

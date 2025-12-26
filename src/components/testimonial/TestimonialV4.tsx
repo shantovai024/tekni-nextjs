@@ -3,6 +3,7 @@ import TestimonialV4Data from '@/assets/jsonData/testimonial/TestimonialV4Data.j
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SingleTestimonialV4 from './SingleTestimonialV4';
 import { Autoplay, Keyboard, Navigation } from 'swiper/modules';
+import SplitText from '../animation/SplitText';
 
 const TestimonialV4 = () => {
     return (
@@ -12,8 +13,19 @@ const TestimonialV4 = () => {
                     <div className="left-heading">
                         <div className="row">
                             <div className="col-lg-6">
-                                <h4 className="sub-title">Tesimonials</h4>
-                                <h2 className="title">What client says <br /> about our services</h2>
+                                <h4 className="sub-title">Testimonials</h4>
+                                <h2 className="title">
+                                    <SplitText
+                                        delay={10}
+                                        animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                        animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                        easing="easeOutCubic"
+                                        threshold={0.2}
+                                        rootMargin="-50px"
+                                    >
+                                        What client says <br />about our services
+                                    </SplitText>
+                                </h2>
                             </div>
                             <div className="col-lg-5 offset-lg-1 text-end">
                                 <div className="testimonial-four-swiper-nav">

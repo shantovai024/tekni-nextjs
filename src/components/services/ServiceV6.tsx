@@ -2,8 +2,15 @@
 import ServicesV6Data from '@/assets/jsonData/services/ServicesV6Data.json'
 import SingleServiceV6 from './SingleServiceV6';
 import { useState } from 'react';
+import SplitText from '../animation/SplitText';
 
-const ServiceV6 = () => {
+interface DataType {
+    hasTitle?: boolean
+    hasBg?: boolean
+    sectionClass?: string
+}
+
+const ServiceV6 = ({ hasTitle, hasBg, sectionClass }: DataType) => {
 
     const [activeServiceId, setActiveServiceId] = useState(ServicesV6Data[0]?.id || null);
 
@@ -17,18 +24,35 @@ const ServiceV6 = () => {
 
     return (
         <>
-            <div className="services-style-six-area default-padding bottom-less bg-gray" style={{ backgroundImage: 'url(/assets/img/shape/54.png)' }}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8 offset-lg-2">
-                            <div className="site-heading text-center">
-                                <h4 className="sub-title">What we do</h4>
-                                <h2 className="title split-text">Techincal solutions that <br /> helps Tech business.</h2>
-                                <div className="devider" />
+            <div className={`services-style-six-area bottom-less bg-gray ${sectionClass ? sectionClass : ""} ${hasBg ? "service6-bg" : ""}`}>
+
+                {/* HasTitle */}
+
+                {hasTitle &&
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8 offset-lg-2">
+                                <div className="site-heading text-center">
+                                    <h4 className="sub-title">What we do</h4>
+                                    <h2 className="title split-text">
+                                        <SplitText
+                                            delay={10}
+                                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                            easing="easeOutCubic"
+                                            threshold={0.2}
+                                            rootMargin="-50px"
+                                        >
+                                            Techincal solutions that <br />helps Tech business.
+                                        </SplitText>
+                                    </h2>
+                                    <div className="devider" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                }
+
                 <div className="container">
                     <div className="services-style-six-items">
                         <div className="row">

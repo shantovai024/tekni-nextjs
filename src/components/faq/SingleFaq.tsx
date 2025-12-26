@@ -5,17 +5,20 @@ interface DataType {
     answer: string;
 }
 
-const SingleFaq = ({ faq }: { faq: DataType }) => {
-    const { id, target, question, answer } = faq
+const SingleFaq = ({ faq, index }: { faq: DataType; index: number; }) => {
+    const { id, target, question, answer } = faq;
+
+    const isFirst = index === 0;
 
     return (
         <div className="accordion-item">
             <h2 className="accordion-header" id={id}>
                 <button
-                    className="accordion-button collapsed"
+                    className={`accordion-button ${!isFirst ? "collapsed" : ""}`}
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#${target}`}
+                    aria-expanded={isFirst}
                     aria-controls={target}
                 >
                     {question}
@@ -24,7 +27,7 @@ const SingleFaq = ({ faq }: { faq: DataType }) => {
 
             <div
                 id={target}
-                className="accordion-collapse collapse"
+                className={`accordion-collapse collapse ${isFirst ? "show" : ""}`}
                 aria-labelledby={id}
                 data-bs-parent="#faqAccordion"
             >

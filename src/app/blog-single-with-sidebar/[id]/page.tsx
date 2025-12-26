@@ -3,6 +3,11 @@ import LayoutV1 from "@/components/layouts/LayoutV1";
 import BlogV1Data from "@/assets/jsonData/blog/BlogV1Data.json"
 import BlogSingleWithSidebarContent from "@/components/blog/BlogSingleWithSidebarContent";
 
+export const metadata = {
+    title: "Tekni - Blog Single With Sidebar"
+};
+
+
 interface Params {
     id: string;
 }

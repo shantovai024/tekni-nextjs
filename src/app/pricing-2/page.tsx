@@ -5,6 +5,9 @@ import PartnerV1 from "@/components/partner/PartnerV1";
 import PriceV2 from "@/components/price/PriceV2";
 import TestimonialV4 from "@/components/testimonial/TestimonialV4";
 
+export const metadata = {
+    title: "Tekni - Pricing 2"
+};
 
 const Pricing2page = () => {
     return (
@@ -15,7 +18,6 @@ const Pricing2page = () => {
                 <PartnerV1 sectionClass="default-padding" />
                 <WhyChooseV1 />
                 <TestimonialV4 />
-                
             </LayoutV1>
         </>
     );
