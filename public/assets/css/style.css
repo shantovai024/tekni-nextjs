@@ -14717,3 +14717,51 @@ footer.footer-style-two .f-item.about::after {
 	height: 100% !important;
 	object-fit: cover;
 }
+
+
+.banner-area .swiper-button-prev svg, 
+.banner-area .swiper-button-next svg {
+    display: none;
+}
+
+.swiper-nav-left div svg {
+    display: none;
+}
+
+.process-style-two .icon img {
+    width: 60px;
+}
+
+.process-style-three img {
+    width: 60px;
+}
+
+.about-style-one .about-thumb img,
+.skill-fact-thumb img,
+ .expertise-style-one-thumb img,
+.about-style-five-left-info img,
+.choose-us-four-thumb img,
+.about-style-four-thumb img,
+.about-style-four-info .thumb>img,
+.team-style-one .thumb img,
+.team-style-two .thumb img,
+.team-style-four-item .thumb img,
+.team-single-area .team-content-top img,
+.project-style-one img,
+.project-style-three-item img,
+.project-details-items .project-thumb img,
+.item-grid-container img,
+.blog-style-one .thumb img,
+.blog-style-three .thumb img,
+.blog-style-four .thumb img,
+.blog-area.full-blog .thumb img,
+.banner-style-two .container .banner-thumb img
+.services-style-two .thumb img,
+.services-details-area .thumb img,
+.about-style-two-thumb img,
+.thumb-style-two img,
+.gallery-style-one>img,
+.feature-style-two .thumb img,
+.thumb-style-one img {
+    width: 100%;
+}
