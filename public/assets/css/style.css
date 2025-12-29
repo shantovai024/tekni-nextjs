@@ -14774,3 +14774,26 @@ footer.footer-style-two .f-item.about::after {
 .blog-area.full-blog .post-author img {
     width: 150px;
 }
+
+.customScrollUp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+    z-index: 999;
+    border-radius: 50%;
+    z-index: 3333;
+}
+
+.customScrollUp i {
+    color: #fff;
+    position: relative;
+}

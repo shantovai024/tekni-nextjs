@@ -18,6 +18,7 @@ import '@/assets/css/style.css'
 
 import type { Metadata } from "next";
 import Dependency from '@/components/utilities/Dependency';
+import ScrollUpBtn from '@/components/utilities/ScrollUpBtn';
 
 export const metadata: Metadata = {
   title: "Tekni - IT Solutions & Services Next.Js Template"
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body>
         <Dependency />
         {children}
+        <ScrollUpBtn />
       </body>
     </html>
   );
