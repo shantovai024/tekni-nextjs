@@ -1,6 +1,6 @@
 {
   "name": "tekni-nextjs",
-  "version": "0.1.0",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,7 +15,7 @@
     "bootstrap": "^5.3.8",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
-    "next": "16.1.0",
+    "next": "16.1.1",
     "react": "19.2.3",
     "react-circular-progressbar": "^2.2.0",
     "react-countup": "^6.5.3",
@@ -32,7 +32,7 @@
     "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9.39.2",
-    "eslint-config-next": "16.1.0",
+    "eslint-config-next": "16.1.1",
     "typescript": "^5"
   }
 }
