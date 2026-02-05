@@ -23,7 +23,7 @@ const SingleServiceV5 = ({ service }: { service: DataType }) => {
                     <Image src={`/assets/img/icon/${icon}`} alt="Image Not Found" width={80} height={80} />
                 </div>
                 <h4>
-                    <Link href={`/service-details/${id}`}>{title}</Link>
+                    <Link href={`/services-details/${id}`}>{title}</Link>
                 </h4>
                 <p>{description}</p>
                 <ul>

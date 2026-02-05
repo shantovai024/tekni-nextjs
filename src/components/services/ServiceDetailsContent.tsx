@@ -67,7 +67,7 @@ const ServiceDetailsContent = ({ serviceInfo }: { serviceInfo: DataType }) => {
                                             <div className="col-md-6" key={service.id}>
                                                 <div className="item">
                                                     <Image src={`/assets/img/icon/${service.icon}`} alt="icon" className="mb-3" width={64} height={64} />
-                                                    <h4><Link href={`/service-details/${service.id}`}>{service.title}</Link></h4>
+                                                    <h4><Link href={`/services-details/${service.id}`}>{service.title}</Link></h4>
                                                     <p> {service.description}</p>
                                                 </div>
                                             </div>

@@ -80,7 +80,7 @@ const FooterV1 = () => {
                                             <Link href="/services-details/4">IT Consulting</Link>
                                         </li>
                                         <li>
-                                            <Link href="/services-details/5">Backup & Recovery</Link>
+                                            <Link href="/services-details/4">Backup & Recovery</Link>
                                         </li>
                                     </ul>
                                 </div>
